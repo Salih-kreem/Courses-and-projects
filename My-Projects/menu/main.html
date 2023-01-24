@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="container">
+                <div class="logo">
+                    <span>{C O D E R}</span>
+                </div>
+                <div class="links">
+                    <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                    <ul>
+                        <li><a class="active" href="">Home.</a></li>
+                        <li><a href="">About.</a></li>
+                        <li><a href="">Praivcy.</a></li>
+                        <li><a href="">Contact.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ------------------landing------------ -->
+
+
+        <div class="landing">
+            <div class="cover"></div>
+             <div class="container">
+                 <div class="content">
+                     <h1>Responsive Navigation Bar</h1>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut illo esse atque quibusdam laborum explicabo quam necessitatibus cum rerum voluptatem?</p>
+
+                     <button>Learn More</button>
+                     
+                 </div>
+                 <div class="social">
+                     <p><i class="fa-brands fa-twitter"></i></p>
+                     <p><i class="fa-brands fa-whatsapp"></i></p>
+                     <p><i class="fa-brands fa-facebook-f"></i></p>
+                     <p><i class="fa-brands fa-instagram"></i></p>
+                 </div>
+                 
+             </div>
+        </div>
+    </div>
+
+    <!-- ------------------file js--------------- -->
+
+    <script>
+        let header = document.querySelector(".header");
+          setInterval(() => {
+            let rand = Math.ceil(Math.random() * 7);
+            header.style.cssText = `background-image: url("./image/header${rand}.jpg")`;
+          }, 3000)
+   
+        let menu = document.querySelector(".menu");
+        let ul = document.querySelector("ul");
+        menu.addEventListener("click", () => {
+            ul.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

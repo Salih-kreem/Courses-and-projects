@@ -1,0 +1,42 @@
+[1] The Box Model and the Box sizing:-
+   1- box-sizing: value;
+     - content-box; // Default value.
+     - border-box;
+
+  div {
+     - webkit-box-sizing: value;
+     - moz-box-sizing: value;
+     - box-sizing: value;
+  }
+
+[2] Transition:- // الانتقال
+   //هو التحكم في حالة العنصر عند الانتقال من حالة الى حالة
+   1- transition-duration: 1s or 1000ms; // هي مدة الانتقال
+   2- transition-delay: 1s; // هي المدة التي ينتظرها حتى يبدأ الانتقال
+   3- transition-property: value; // هي الخاصية التي تطبق عليها الحالة
+      - all; // Default value.
+      - scroll;
+      - hover;
+      - margin-left, padding;
+   4- transition-timing-function: value; // هي التحكم في سرعةالانتقال
+      - ease; Default value // يبدا بطيئ ويسرع وينتهي بطيئ
+      - linear; // ياتي ويرجع بنفس السرعة
+      - ease-in; // يبدأ بطيئ ويكمل عادي
+      - ease-out; // يبدأ عادي ويكمل بطيئ
+      - ease-in-out; // يبدأ بطيئ وينتهي بطيئ
+   5- Short hand:-
+      - transition: value value value value;
+        - property.
+        - duration.
+        - timing-function.
+        - delay.
+
+[6] !Important Declaration:- // هو تصريح لاهمية الخاصية
+   .header {
+     color: red; !important;
+     // html  يجعل الخاصية تطغى على الخاصية في ملف الروت والتي تكون قبلها في الترتيب
+   }
+
+[7] The margin collapse:-
+
+[8] Variables and trainings:-

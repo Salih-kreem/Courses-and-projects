@@ -1,0 +1,116 @@
+[#] Destructuring:-
+    Is a javaScript expression that allows use to extract data from arrays,
+    object and maps and setItem into new destinct variables.
+    
+ [1] Destructuring Arrays:
+     
+     let family = ['salih', 'ogba', 'amona', 'saad'];
+     let [a, b, c, d] = family;  
+     a = 50;
+     console.log(a) // return 50
+     [a, b, c, d, e] = family; 
+     console.log(a) // return salih
+     console.log(e) // return undefined
+     
+    1- Adding Default Value:
+     
+     [a, b, c, d, e = "hassan"] = family;
+     console.log(e) // return hassan
+     [a, , c, d,] spacing b and e
+     
+    2- Destructuring Nested Array:
+    
+     const family = ['alnor', 'alnaseem', ['salih', 'ogba', 'saad']];
+     
+     let ['a', , [s, , ,]] = family;
+     
+     console.log(a)// alnor
+     console.log(s)// salih 
+     
+    3- swaping:
+     [book, video] = [video, book]
+     
+ [2] Destructuring Object:
+     
+     let user = {
+     name: "salih",
+     age: 25,
+     address: 'khartoum',
+     }
+     
+     let {n, a, d} = user;
+     
+     if the variables declared will write by this method
+     ({name, age, address} = user);
+     
+     if you want space variable just dont write variable name
+     
+    1- Rename:
+    
+     ({name:n, age:a, addres:ad} = user);
+     
+    2- Add new property:
+     
+     ({name:n, age:a, addres:ad, YourColor = 'orange'} = user);
+     
+     And you can renaming for a new property:
+     
+     ({name:n, age:a, addres:ad, YourColor:YC = 'orange'} = user);
+     
+    3- Nested Object:
+     
+     let user = {
+     name: "salih",
+     age: 25,
+     address: 'khartoum',
+     language: {
+     one: 'thml',
+     two: 'css',
+     three: 'javaScript',
+     four: 'php',
+     }
+     }
+     
+     ({name:n, age:a, addres:ad, language: {one, two, three, four}} = user);
+     
+     You can Destructur Nested Object only
+     
+     ({one, two, three, four} = user.language);
+     
+ [3] Destructuring Function Parameters:
+     
+       let user = {
+     name: "salih",
+     age: 25,
+     address: 'khartoum',
+     language: {
+     one: 'thml',
+     two: 'css',
+     three: 'javaScript',
+     four: 'php',
+     }
+     }
+     
+     function showInfo (info) {
+     console.log(info.name)
+     console.log(info.age)
+     console.log(info.language.one)
+     console.log(info.language.two)
+     console.log(info.language.three)
+     console.log(info.language.four)
+     } showInfo(user);
+     
+     
+     - Destructuring:
+     
+     function showInfo({name, age, language: {one, two, three, four}} = user) {
+     console.log(name)
+     console.log(age)
+     console.log(one)
+     console.log(two)
+     console.log(three)
+     console.log(four)
+     } showInfo(user);
+     
+     
+     

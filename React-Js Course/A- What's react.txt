@@ -1,0 +1,38 @@
+[1] What is React JS ?
+   - Is a javaScript library for building user interfaces.
+   - Single page application like instagram and whatsapp.
+   - Created by facebook.
+   - V for MVC.
+   - Dynamic web app.
+
+
+
+
+
+[2] Who use React JS ?
+    - Facebook.
+    - Whatsapp.
+    - Instagram.
+
+[3] Why react Js is important ?
+
+[4] Core Concept of React:-
+    - Virtual Dom.
+    - JSX.
+    - Component.
+    
+[5] Content of Course :-
+    - Setup
+    - Component
+    - JSX
+    - Virtual Dom
+    - Props
+    - State
+    - Events
+
+[6] What should you learn before react ?
+    - You must have knowledge of HTML
+    - You must have knowledge of CSS 
+    - You must have knowledge of JAVASCRIPT 
+
+    

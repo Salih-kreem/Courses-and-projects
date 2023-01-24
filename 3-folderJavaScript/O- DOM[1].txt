@@ -1,0 +1,154 @@
+[1] What's The DOM ?
+    The Document Object Model is created by the browser when an HTML
+    document is loaded.
+
+    It's a 'tree Structure' representation of an HTML structure
+
+    Note! In a DOM tree, all elements are object.
+
+[2] What Can Do With DOM in JavaScript:-
+
+    1- Can Change an HTML elements content.
+    2- Can add attributes to an HTML element.
+    3- Can Change an HTML elements attribute value.
+    4- Can Change an HTML element's style.
+    5- Can add HTML elements to other HTML elements.
+    6- Can remove an HTML element.
+    7- Can listn to events that happen to an HTML element.
+
+[3] DOM Selectors:-
+
+    1- Find Element by ID:
+       document.getElementById("id element");
+
+    2- Find Element by Tag Name:
+       document.getElementByTagName("Tag Name element");
+
+    3- Find Elements by Tag Name:
+       document.getElementsByTagName ("Tag Name elements");
+
+    4- Find Element by class Name:
+       document.getElementByClassName("Class Name element");
+
+    5- Find Elements by class Name:
+       document.getElementsByClassName("Class Name elements");
+
+    6- Find Element by Css selectors:
+       document.QuerySelector("All Selectors");
+       But this find first selector from his type.
+
+       document.QuerySelectorAll("All Selectors");
+       This find All selectors from his type.
+
+    7- Find Element by Collection:
+       - title:
+         document.title
+       - [body - head - images - forms - links]
+         You Can Use index.
+
+
+[3] Get - Set Elements:-
+       - innerHTML // Return Structure an HTML document and text Content.
+       - textContent // Return only text content even structure HTML Ignore it
+         and return it like text content.
+      1- get:
+         console.log(nameElement.innerHTML);
+         console.log(nameElement.textContent);
+
+      2- set:
+         nameElement.innerHTML = "text";
+         nameElement.textContent = "text";
+
+[4] Change Attribute Directly:-
+       - document.images[index].title = "new value";
+       - document.images[index].class = "new value";
+       - document.images[index].alt = "new vlaue";
+
+       Note! Change value of Attribute If It existing but If Attribute is not existing will
+             Adding New Attribute.
+
+
+[5] Change Attribute With [Get - Set]:-
+    1- get:
+       nameElement.getAttribute("name attribute");
+
+    2- set:
+       nameElement.setAttribute("name attribute", "value");
+
+       Note! Change the value if attribute is found but it's not
+             Found attribute adding new attribute with value
+
+
+[6] Check Attribute:-
+
+    1- Attribute // Show All the Attributes to The element.
+       console.log(nameElement.attributes);
+
+    2- hasAttribute // Will check if the element contain the attribute or not
+                       and return boolean value use in if condition
+       console.log(nameElement.hasAttribute("name Attribute"));
+
+    3- hasAttributes // also return boolean value.
+       console.log(nameElement.hasAttributes());
+
+    4- removeAttribute // This method will remove attribute from the element.
+       console.log(nameElement.removeAttribute("name attribute"));
+
+
+[7] Creat And Append Element:-
+
+    1- creatElement // creat new element.
+       varName = document.creatElement("tag element");
+
+    2- createAttribute // create a new attribute and you can store in a variable
+       varName.createAttribute("nameAttribute");
+
+    3- setAttributeNode // adding attribute has null value affter created attribute
+                           And you can change the value in the future.
+       const myAttr = document.createAttribute("nameAttribute");
+       nameElement.setAttributeNode(varName);
+
+  Other method to create attribute:
+    1- nameElement = document.setAttribute("nameAttribute", "value");
+
+    2- createTextNode // ينشئ محتوى نصي ويخزنه في قيمه
+       nameVar = document.createTextNode("text content");
+
+    3- createComment // ينشئ تعليق في الصفحة
+       nameVar = document.createComment("comment Content");
+
+    4- appendChild // Store element or text to the body or the element to the first
+       const myP = document.creatElement("p");
+       const myDiv = document.creatElement("div");
+
+       myDiv.appendChild(myP);
+
+       in above line code the p element storige in the div element
+       and you can store text content instead of element tag.
+
+
+
+[8] Deal With Childrens:-
+
+     1- children // return just elements found into the parent element.
+        console.log(nameElement.children);
+        and you can use index
+        console.log(nameElement.children[index]);
+
+     2- childNodes // return everything in the parent element like text and comment
+                     and element and space.
+        console.log(nameElement.childNodes);
+        and you can use index
+        console.log(nameElement.childNodes[index]);
+
+     3- firstChild // return first child whether it's text or comment or element or space
+        console.log(nameElement.firstChild);
+
+     4- lastChild // return last child whether it's text or comment or element or space
+        console.log(nameElement.lastChild);
+
+     5- firstElementChild // return just first element from the parent element
+        console.log(nameElement.firstElementChild);
+
+     6- lastElementChild // return just last element from the parent element
+        console.log(nameElement.lastElementChild);

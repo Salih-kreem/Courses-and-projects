@@ -1,0 +1,177 @@
+[1] Events:-
+   What's the event?
+
+
+  1- Mouse Events:
+     - onclick: عند النقر على العنصر
+     - onmouseover: عندما ياتي مؤشر الماوس فوق العنصر
+     - onmouseout: عندما يغادر مؤشر الماوس العنصر
+     - onmousedown: عند الضغط على الماوس  على العنصر
+     - onmouseup: عندما يتم تحرير زر الماوس فوق العنصر
+     - onmousemove: عندما يتحرك الماوس في العنصر
+     - onmouseenter: عندما يحصل هوفر على العنصر
+     - oncontextmenu: عند الضغط على الزر الايمن في الماوس
+     - onmouseleave: عندما يغادر مؤشر الماوس من العنصر
+
+  2- Keyboard Events:
+     - onkeydown: عندما يضغط المستخم على المفتاح
+     - onkeyup: عندما يقوم المستخم بتحرير المفتاح
+
+  3- Form Events:
+     - onfocus: عندما يركز المستخدم على عنصر
+     - onsubmit: عندما يرسل المستخدم بيانات الفوورم
+     - onblur: عندما يتغير التركيز من عنصر الي عنصر
+     - onchange: عندما يقوم المستخدم بتغير قيمة عنصر في الفوورم
+
+  4- Window Events:
+     - onload: عندما ينتهي تحميل الصفحة
+     - onunload: عندما يغادر المستخدم الصفحة يقوم المتصفح ب الغاء تحميلها
+     - onresize: عندما يقوم المستخدم او الزائر بتغير حجم الصغحة
+
+
+
+
+
+[2] Class List Object:-
+    By this method you can add or remove or search of class.
+
+    const element = document.QuerySelector("nameElement");
+    console.log(element.classList); : will show all class in this element.
+
+    1- length :
+    2- contains: search of classList if this class it existing or not
+                 and return boolean value.
+       console.log(element.classList.contains("nameClass"));
+
+    3- Item: request index of class.
+       console.log(element.classList.item("index of class"));
+
+    4- Add: Adding new class.
+       console.log(element.classList.add("nameClass"));
+       You can add more than one class to the element.
+
+    5- Remove: Removing class from the classList.
+       console.log(element.classList.remove("nameClass"));
+       You can remove more than one class from list
+
+    6- toggle: Adding class to the element if not existing But it found
+               will removing it.
+       console.log(element.classList.toggle("nameClass"));
+       You can't write more than one class the toggle.
+
+
+
+
+
+[3] Styling And Style Sheets:-
+    1- style: تكتب كل خاصيه في امر برمجي لوحده
+       nameElement.style.color = "green";
+       nameElement.style.fonSize = "40px";
+
+    2- cssText: يمكن ان تكتب اكثر من خاصية في امر برمجي واحد
+       nameElement.style.cssText = "font-size: 50px; background: #DDD; color: white";
+
+    3- removeProperty: Removing the property from inline style or external style
+       nameElement.style.removeProperty("nameProperty");
+
+    4- setProperty: Adding new property and you can use !important.
+       nameElement.style.setProperty("nameProperty", "value");
+       With !important:
+       nameElement.style.setProperty("nameProperty", "value", "important");
+
+       How to access to stylesheets files:
+       document.stylesheets[index].rules[index].style.property = "value";
+
+
+
+
+[4] Before, After, Prepend, append, remove:-
+
+    1- before: Adding content before element.
+       nameElement.before("value"); // you can add text or element.
+
+    2- after: Adding content after element.
+       nameElement.after("value"); // you can add text or element.
+
+    3- append: Adding the content inside the element but to the end.
+       nameElement.append("vaue"); // you can add text or element.
+
+    4- Prepend: Adding the content inside the element but to the first.
+       nameElement.Prepend("value"); // you can add text or element.
+
+    5- remove: Removing the element from structure HTML.
+       nameElement.remove();
+
+
+
+
+[5] DOM Traversing:-
+
+    1- nextSibling: يظهر الشقيق التالي للنصر المختار
+       nameElement.nextSibling; : And you can do any tasks
+
+    2- previousSibling: يظهر الشقيق السابق للعنصر المختار
+       nameElement.previousSibling;
+
+    3- parent: يظهر العنصر الاب للعنصر المختار
+       nameElement.parent;
+
+    4- nextElementSibling: يظهر فقط العنصر التالي للعنصر المختار
+       nameElement.nextElementSibling;
+
+    5- previousElementSibling: يظهر فقط العنصر السابق للعنصر المختار
+       nameElement.previousElementSibling;
+
+
+
+
+[6] Cloning:-
+      clonNode(Deep); // ياخذ نسخة من العنصر دون الناثير على العنصر الاصلي
+      Deep:
+      1- false: Default value
+         Dont give text and element it found inside it
+
+      2- true:
+         give everything founded inside it
+
+         Note! But you must change id and name it clone element.
+
+         const span = document.QuerySelector("span").clonNode(true);
+         const div = document.QuerySelector("div");
+         span.id = `new value`;
+
+         div.appendChild(span);
+
+
+
+
+[7] AddEventListener:-
+        1- addEventListener("event", function): Adding event to the element.
+        2- Use without [on].
+        3- Attach multiple Events.
+        4- Error Test.
+
+        function one() { };
+        function two() { };
+
+        nameElement.addEventListener("click", one);
+        nameElement.addEventListener("click", two);
+
+Example:
+        const btn = document.QuerySelector("button");
+        btn.onclick = function() {
+        let p = document.QuerySelector("p").clonNode(true);
+        p.className = "clone";
+        document.body.appendChild(p);
+        };
+
+        1- const clond = document.QuerySelector(".clone"); [Error]
+        clond.onclick = function() {
+        console.log("cloned element");
+        };
+
+        2- document.addEventListener("click", function(ele) {
+        if(ele.target.className === "clone") {
+        console.log("cloned element");
+        }
+        });

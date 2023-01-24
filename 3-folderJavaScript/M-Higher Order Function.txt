@@ -1,0 +1,114 @@
+[1] Map:-
+    Is a function that accepts function as parameters and returns a function
+
+    Syntax :
+
+     map(function(element,index,array){
+
+     //Block Of Code;
+
+     }, this Argument);
+
+     1- element => The current element being processed in the Array.
+     2- index => The index of the current element being processed in the Array.
+     3- Array => The current Array.
+
+     Note!
+     - Map creates a new array.
+     - populated with the results of calling a provided function on every element
+       In the calling array.
+
+     Example :
+
+        let num = [40, 50, 11, 22, 1, 3, 51];
+
+        let newnum = num.map(function(ele) {
+           return ele + ele;
+           })
+
+        console.log(newnum);
+
+
+
+[2] Filter:-
+
+    Syntax :
+      filter(function(element, index, array){
+
+      //Block Of Code;
+
+      },this Argument);
+
+      1- element => The current element being processed in the Array.
+      2- index => The index of the current element being processed in the Array.
+      3- Array => The current Array.
+
+      Note!
+      - filter creates new array.
+      - with all elements that pass the test implemented by the provided function.
+
+      Example:
+      1-
+        let names = ["salih", "siham", "Ahmed", "abass", "soha", "Gamal", "Kamal",];
+
+        let nameStartWithS = names.filter(function(ele) {
+        return ele.startsWith("s");
+        });
+
+        console.log(nameStartWithS);
+
+      2-
+       let num = [40, 12, 55, "Ahmed", 15,  "abass", 12, "soha",];
+
+       let onlyNumber = num.filter(function(ele){
+       return  typeof ele === "number";
+       });
+       console.log(onlyNumber);
+
+
+
+[3] Reduce:-
+     - Method executes a reduce function on each element of the array.
+     - Resulting in a single output value.
+
+    Syntax:
+
+      reduce.(function(Accumulator, Current Value, Current Index, Source Array){
+
+      //Block Of Code;
+
+      }, This Argument);
+
+      1- Accumulator => The accumulated value previously returned in the last invocation.
+      2- Current value => The current element being processed in the array.
+      3- Current Index => The index of the current element being processed in the array.
+      4- Source Array => The current array.
+
+      Note!
+
+      - Starts from index 0 if an initial value is provided.
+      - otherwist, it starts from index 1.
+
+      Example:
+
+
+
+
+
+[4] forEach:-
+    - Method executes aprovided function once for each array element.
+
+    Syntax:
+       forEach(function(element, index, array) {
+
+       //Block Of Code;
+
+       }, this Argument);
+
+       1- element => The current element being processed in the array.
+       2- index => The index of the current element being processed in the array.
+       3- array => The current array.
+
+       Note!
+       - Don't return anything [Undefined].
+       - Break will not break the loop.

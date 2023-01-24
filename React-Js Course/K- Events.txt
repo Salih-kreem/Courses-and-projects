@@ -1,0 +1,41 @@
+[1]
+
+class App extends Component {
+  Hello() {
+   console.log('Hello");
+  }
+
+  render() {
+    return (
+      <div className="App">
+      <button onClick={this.Hello.bind(this)}>Click</button>
+      </div>
+    );
+  }
+} 
+
+
+
+
+[2]
+
+class App extends Component {
+  state = {
+    name:'Salih alnor',
+      age: 26
+  }
+  Hello() {
+    console.log(this.state.name) // In the console will be error you should use bind or use arrow function
+  }
+  
+  render() {
+    return (
+      <div className="App">
+      <button onClick={this.Hello.bind(this)}>Click</button>
+      <p>{this.state.name}</p>
+      <p>{this.state.age}</p>
+      
+      </div>
+    );
+  }
+} 

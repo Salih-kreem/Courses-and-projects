@@ -1,0 +1,34 @@
+
+Deep Information :-
+
+[1] Shell: Command line interpreter.
+[2] Terminal: Text input/output environment
+[3] CMD: Is the original shell for the Microsoft DOS operating system.
+[4] Power Shell: After CMD
+
+# Why Learning cmd ?
+
+1- Use less system resources.
+2- Intelligent Tab completion to complete Paths and common commands.
+3- Use loops to Repeat commands.
+4- Same like code Only text nothing to Distract you.
+5- Command line Dont care about OS Distribution Bash Is Bash.
+6- Deal with backage manager.
+7- Use Git/GitHub Commands.
+8- Commands is commands nothing Change.
+9- Increase writing speed.
+
+# Example about Command It's write in command:-
+
+1- IP config.
+2- Move all text in dir.
+3- Delete files with Extensions.
+4- Change Settings Quickly.
+5- Create many dir at once.
+6- Edit system files Quickly.
+7- Create Batch to automate things like register Edit.
+
+# What we will learn ?
+
+1- Windows CMD Commands.
+2- Unix Systems Commands [linux - Mac].

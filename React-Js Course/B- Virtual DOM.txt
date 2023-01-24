@@ -1,0 +1,22 @@
+[1] What's virtual Dom ?
+    It's concept used by react to make changes quickly
+
+[2] Real Dom:-
+    It's like virtual dom but it takes longer to change.
+
+[3] Difference between real and virtual dom:-
+    1- Virtual:-
+
+    - React build a new virtual dom
+    - Compare it with the old dom
+    - update only the changed and show it in real dom
+
+[4] Setup react with CDN:-
+    - Go to the website: 'https://www.reactjs.org'
+    - click on'Get Started'
+    - in the right page click on 'CDN Links'
+    - And copy Minified Links
+    - And paste in head on html document.
+    - Then create div in body contain id called 'app'
+
+

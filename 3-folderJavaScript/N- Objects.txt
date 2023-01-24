@@ -1,0 +1,9 @@
+[1] What's the Object: // هو واحد من اهم المفاهيم في البرمجة والذي يحتوي على methods and propertis
+
+  - propertis: // هي عبارة عن بيانات تخص الكائن ويمكن ان تكون اي نوع من البيانات
+  - methods: // هي الدوال او الوظائف التي ينفذها الكائن
+
+[2] Testing Window Object:-
+
+  window.location => // رابط الموقع
+  window.location.assign() // يمكن عن طريقها تغير رابط الموقع

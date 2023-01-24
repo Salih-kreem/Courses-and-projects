@@ -1,0 +1,19 @@
+[1] What's NPM 
+    NPM stands for Node pakage manager
+    It's System that contain all pakages that related to node
+
+Setup Node js:
+- Install node js Go to link 'https://nodejs.org'
+- And click on 'recommended for most user'
+- And go to terminal or PowerShell then write 'node -v' 
+
+
+Steps to install and create React app:
+- npm install -g create-react-app
+- create-react-app app-name
+- cd app-name
+- npm start
+
+
+
+If don't run write this code [Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser]

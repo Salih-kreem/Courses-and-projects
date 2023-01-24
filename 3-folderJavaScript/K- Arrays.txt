@@ -1,0 +1,104 @@
+[1] Array Big:-
+    1- You Can Creat Array By Two Methods.
+     - let nameArray = [" ", " ", " "];
+     - let nameArray = new Array("", "", "");
+
+      let Family = ["Salih", "Alnor", "Ammona", "Saad", "Abdalla"];
+
+   2- Access Arrays Elements.
+      console.log(nameArray[index]);
+
+   3- Nested Arrays:-
+    - let nameArray = [" ", [" ", " ", " "], " "];
+      Access to Element inside nested Array.
+      console.log(nameArray[index][index]);
+
+   4- Change Array Elements.
+      nameArray[index] = "newElement";
+
+      Notes: You Can Change From Array To Element And From Element To Array.
+
+   5- Check For Array.
+      Array.is Array(nameArray);
+      console.log(Array.is Array(nameArray));
+
+
+
+[2] Using Length With Array:-
+
+    - You can add new Element to Array By dainamic Method.
+      nameArray[nameArray.length] = "newElement";
+
+    - And you can Apdate last Element from Array.
+      nameArray[nameArray.length - 1] = "newElement";
+
+
+
+[3] Add And Remove From Array:-
+
+    1- unshift("", ""); // Add Element to the First.
+       console.log(nameArray.unshift(""));
+
+    2- push("", ""); // Add Element to the End.
+       console.log(nameArray.push(""));
+
+    3- shift(""); // Remove first Element from array.
+       console.log(nameArray.shift());
+
+    4- pop(); // Remove last Element From Array.
+       console.log(nameArray.pop());
+
+
+
+[4] Search Array:-
+
+    1- indexOf(); // Search Element From Start to End.
+       indexOf("Search Element", From Index [opt]);
+       console.log(nameArray.indexOf("Element"));
+       - If Dont Write Index Will Start Search From Start.
+
+    2- lastIndexOf(); // Search Element From End To Start.
+       lastIndexOf("Search Element", From Index [opt]);
+       console.log(nameArray.lastIndexOf("Element"));
+
+    3- includs(); // This Method mean if this Value find or not and Output will be true or false.
+       includs("value to Find", From Index[opt]);
+
+
+
+[5] Sort Array Method:- // تعني التريتب
+
+    1- sort(function[opt]); // ترتب القيم الموجوده ابجديا وتبدا بالارقام السالبة ثم الموجبة ثم الحروف
+       console.log(nameArray.sort());
+
+    2- reverse(); // تعمل عكس للمصفوفة
+       console.log(nameArray.reverse());
+
+
+
+[6] Slicing And Splice Arrays:-
+
+    1- slice();
+       slice(start[opt], end[opt]); Not including End.
+       - slice(); slicing for All Array.
+       - If start is Undefined => 0.
+       - If start By negative value count from End.
+       - If end is Undefined || - indexes => slice to the End array.length.
+       - Return New Array.
+
+    2- splice();
+       splice(start[mand], deleteCount[opt], the Items to add[opt]);
+       - If start By negative value will count from end.
+       - If deleteCount = 0  Not Remove.
+
+
+
+[7] Joining Arrays:-
+
+    1- concat();
+       console.log(nameArray.concat(" ", ["", ""]));
+       - You can add Items And new Array.
+       - Return new array.
+
+    2- join(); // Change Array to String.
+       console.log(nameArray.join());

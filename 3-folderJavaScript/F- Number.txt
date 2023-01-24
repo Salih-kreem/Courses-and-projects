@@ -1,0 +1,78 @@
+[#] Number:-
+  1- Double Precition.  Search for It
+
+  2- Syntactic Suger . " _ ".
+     1000000 => 1_000_000 return same value.
+
+  3- number e
+     console.log(1e6); return 1000000.
+
+  4- " ** "
+     console.log(5**4); return 5*5*5*5 =625
+
+  5- With Decimal // اذا كانت بعد الفاصلة العشرية رقم صفر او مجموعة اصفار لا تكتب
+     console.log(4000.000); return 4000
+
+  6- Number+BigInt :
+     - Number.MAX_SAFE_INTEGER : //اكبر رقم امن
+       console.log(Number.MAX_SAFE_INTEGER);
+       console.log(Number.MIN_SAFE_INTEGER);
+
+     - Number.MAX_VALUE : // اكبر رقم مسموح في اللغة
+       console.log(Number.MAX_VALUE);
+       console.log(Number.MIN_VALUE);
+
+
+[#] Number Methods:- // هي اجراءات جاهزة تنفذ وظائف معينة
+   1- toString(); // تسترجع عدد نص
+      console.log((100).toString());
+      console.log(100..toString());
+
+   2- toFixed(); // يحدد عددالارقام التي ستظهر بعد الفاصلة ويسترجعها نص
+      console.log(15.248555.toFixed(2)); 15.25
+
+   3- parseInt(); // تحلل البيانات وتسترجع منها رقم صحيح
+      console.log(parseInt("150")); => 150
+      console.log(parseInt("150 adgg")); => 150
+      console.log(parseInt("gyd 150"));  => NaN
+
+   4- parseFloat(); // تحلل البيانات وتسترجع عدد غير صحيح
+      console.log(parseFloat("150.12")); => 150.12
+
+   5- isInteger(); //  تعني هل هذا رقم صحيح
+
+      console.log(Number.isInteger(50)); return true.
+      console.log(Number.isInteger(50.20)); return false.
+
+   6- isNaN(); // تعني هل هذة البيانات ليست رقم
+      console.log(Number.isNaN(50)); return false.
+      console.log(Number.isNaN(50 - "ssss")); return true.
+
+[#] Math Object:-
+   1- round(); //يقرب لاقرب عدد صحيح
+      console.log(Math.round(7.3)); return 7
+      console.log(Math.round(7.5)); return 8
+
+   2- ceil(); // يقرب لاعلى قيمة
+      console.log(Math.ceil(4.7)); return 5
+      console.log(Math.ceil(4.2)); return 5
+
+   3- floor(); // يقرب لاقل قيمة
+      console.log(Math.floor(4.7)); return 4
+      console.log(Math.floor(4.2)); return 4
+
+   4- min(); // يطبع اقل رقم
+      console.log(Math.min(5, 4, 10, 2, 20)); return 2
+
+   5- max(); // يطبع اكبر رقم
+      console.log(Math.max(5, 4, 10, 2, 20)); return 20
+
+   6- pow() ;//
+      console.log(Math.pow(4, 3)); return 4*4*4= 64
+
+   7- random(); // يطبع رقم عشوائي
+      console.log(Math.random());
+
+   8- trunc(); // تسترجع عدد صحيح
+      console.log(Math.trunc(4.80)); return 4
+      console.log(Math.trunc(4.20)); return 4

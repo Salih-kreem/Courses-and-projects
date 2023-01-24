@@ -1,0 +1,71 @@
+[1] Props vs States:
+    
+    1- Props:
+       - Are like HTML attribute name="value"
+       - Is short for properties
+       - Props are passed from component to another
+       - props are immutable
+       - Similar to function parameters
+
+    2- States:
+       - Holds information about the component.
+       - State is changeble
+       - Can be changed using inbuilt setState()
+       - Similar to variables declared within a function
+       - Managed and limited to your current component
+
+
+Note: You can pass the state of the current component
+      As props to other component
+
+
+
+Example:
+
+    
+class App extends React.Component {
+   state = {
+    header: 'This for Header',
+    content: 'This for Content',
+    footer: 'This for Footer',
+    
+   }
+        render() {
+            return(
+                <div>
+                
+                   <Header header={this.state.header}/>
+                   <Content content={this.state.content}/>
+                   <Footer footer={this.state.footer}/>
+                </div>
+            )
+        }
+    }
+
+    class Header extends React.Component {
+        render() {
+            return(
+                <p>{this.props.header}</p>
+            )
+        }
+    }
+
+    class Content extends React.Component {
+        render() {
+            return(
+                <p>{this.props.content}</p>
+            )
+        }
+    }
+
+    class Footer extends React.Component {
+        render() {
+            return(
+                <p>{this.props.footer}</p>
+            )
+        }
+    }
+
+    
+
+    ReactDOM.render(<App />, document.getElementById("app"));

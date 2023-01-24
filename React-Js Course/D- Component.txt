@@ -1,0 +1,71 @@
+[1] What's Component ?
+    It means dividing the website into parts so that if an error
+    occurs, you know that the error comes from a specific section
+    and also so that you can use the part elsewhere in the project
+
+    - Let you split the UI into independent, reusable pieces
+    - Think about each piece in isolation
+    - Component are like javaScript function
+
+    Syntax:
+    
+    1- function App() {
+        return(
+            <p> Hello world</p>
+        )
+    }
+
+    ReactDOM.render(<App />, document.getElementById('app'))
+
+
+    2- class componentName extends React.Component {
+        render() {
+            return(
+                <p>Hello</p>
+            )
+        }
+    }
+
+    ReactDOM.render(<componentName />, document.getElementById('app'))
+
+    3- Multipale Component:
+    
+    
+   class App extends React.Component {
+        render() {
+            return(
+                <div>
+                   <Header />
+                   <Content />
+                   <Footer />
+                </div>
+            )
+        }
+    }
+
+    class Header extends React.Component {
+        render() {
+            return(
+                <p>Header</p>
+            )
+        }
+    }
+
+    class Content extends React.Component {
+        render() {
+            return(
+                <p>Content</p>
+            )
+        }
+    }
+
+    class Footer extends React.Component {
+        render() {
+            return(
+                <p>Footer</p>
+            )
+        }
+    }
+    
+
+    ReactDOM.render(<App />, document.getElementById("app"));

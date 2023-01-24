@@ -1,0 +1,27 @@
+ [#] Unary Plus And Negation:-
+   1- " + " Unary Plus : return number If not number.
+      - test
+        normal  number => number
+        string  number => number
+        string -number => number
+        string text    => NaN
+        float number   => float number
+        HNS            => number
+        null           => 0
+        false          => 0
+        true           => 1
+
+  2- " - " Unary Negation : return -number If number Or not number.
+
+      - test
+        normal  number => -number
+        string  number => -number
+        string -number =>  number
+        string text    =>  NaN
+        float number   =>  float -number
+        HNS            => -number
+        null           => -0
+        false          => -0
+        true           => -1
+
+      Notes : HNS mean Hexadecimal numeral system.

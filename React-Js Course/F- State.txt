@@ -1,0 +1,22 @@
+[1] State:-
+    - Is javaScript object
+    - Private feature belongs to a single component
+    - Holds data about component
+    - State can be changed
+
+    Example:
+
+    class App extends React.Component {
+    state = {
+        name: "salih",
+        age: 26
+    }
+        render() {
+            return(
+                <div>
+                    <p>{this.state.name}</p>
+                    <p>{this.state.age}</p>
+                </div>
+            )
+        }
+    }

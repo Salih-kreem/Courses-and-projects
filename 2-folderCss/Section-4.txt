@@ -1,0 +1,47 @@
+[1] Z-Index:- // نظام الطبقات  وهو لا يعمل بدون البوزيشن
+
+[2] List Styling:-
+   1- list-style-type: value;
+   2- list-style-position: value;
+     - outside: default value // في هذه الحالة البولد لا تشمل التنسيق في القائمة
+     - inside: // في هذة الحالة التنسيق يشمل البولد
+   3- list-style: value  // Short hand.
+
+[3] Table Styling:-
+
+[4] Pesudo Classes:- // هي كلاسات مزيفة غير موجودة في الصفحة
+   1- :hover
+   2- :checked
+   3- :visited
+   4- :empty
+   5- :focus
+
+[5] Pesudo Element:-
+   1- ::first-letter
+   2- ::first-line
+   3- ::selection
+   4- ::before
+   5- ::after
+   6- content: ""; //  هي خاصية العناصر المزيفة لا تعمل بدونها
+
+[6] Counter:-
+   1- counter-increment: nameConter; // هذة تكون في العنصر الاب
+   2- content: counter(nameConter);
+
+[7] Vendors Prefixes:-
+
+[8] Border Radius:- // نصف القطر
+   1- border-radius-top-left: value or 2 values;
+   2- border-radius-top-right: value or 2 values;
+   3- border-radius-bottom-right: value or 2 values;
+   4- border-radius-bottom-left: value or 2 value;
+   5- border-radius: value value value value; // Short hand.
+
+[9] Box Shadow:-
+   1- H-shadow: // الظل الافقي
+   2- V-shadow: // الظل العمودي
+   3- Blur: // تاثير الضباب
+   4- Spread: // نسبة الانتشار
+   5- inset: // ظل داخلي
+   6- outset // خارجي
+   - You can use more than one shadow in the element.

@@ -1,0 +1,48 @@
+[1] React dom:-
+    Syntax:
+
+    let varName = React.createElement(
+        'tagName',
+        {Attribute}, If don't have Attribute write null,
+        'content'
+    )
+
+    ReactDOM.render(varName, document.getElementById('app'))
+
+[2] Child inside element:
+
+     let varName = React.createElement(
+        'tagName',
+        {Attribute}, If don't have Attribute write null,
+        React.createElement(
+        'tagName',
+        {Attribute}, If don't have Attribute write null,
+        'content'
+    )
+    )
+
+
+[3] JSX:
+    Syntax:
+
+    let varName = <tag>content</tag>;
+    ReactDOM.render(varName, document.getElementById('app'));
+
+
+    Note: but this method will not work unless we add the babel link 
+
+    - Go to link 'https://www.babeljs.io'
+    - click on Setup
+    - And click on prototyping 'In the browser'
+    - Copy link Babel and paste in head on html document
+    - And write in script tag 'type="text/babel"'
+
+[4] Child inside element:
+    let varName =(
+        <div>
+          <p>content</p>
+          <p>content</p>
+          <p>content</p>
+        </div>
+    );
+

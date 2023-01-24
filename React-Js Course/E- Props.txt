@@ -1,0 +1,34 @@
+[1] What is Props ?
+    - Props stands for properties
+    - Props are like html attribute (name = "value")
+    - They can pass data from a parent Component to its
+      Child Components
+    - Props are immutable (not changed)
+
+
+    Example:
+    
+     class App extends React.Component {
+        render() {
+            return(
+                <div>
+                   <Header title = "header" />
+                   <Content />
+                   <Footer />
+                </div>
+            )
+        }
+    }
+
+    class Header extends React.Component {
+        render() {
+            return(
+                <p>{this.props.title}</p>
+            )
+        }
+    }
+
+    Props: {
+        title: "hello world",
+        name: "salih"
+    }

@@ -1,0 +1,43 @@
+
+[1] Background-color:-
+  1- background-color: red; //   يكتب اسم لون الخلفية
+  2- background-color: rgda(0 0 0 / 50%); // channel
+  3- background-color: #EEE; // hex code
+
+[2] Background-image:-
+  1- background-image:url("path"); // يكتب مسار الصورة المراد وضعها
+  2- background-repeat: value;
+      -repeat:    تعني تكرار الصورة
+      -repeat-x:  تعني تكرار الصورة افقيا
+      -repeat-y:  تعني تكرار الصورة عموديا
+      -no-repeat: تعني عدم تكرار الصورة
+  3-background-attachment: value;
+     -scroll:     تجعل الصورة تتحرك مع المحتوى
+     -fixed:      تجعل الصورة ثابتة لا تتحرك مع المحتوى
+  3-background-position: value value; تحرك الصورة في الصفحة حسب الاتجاه الذي تختاره
+  4-background-size:-
+     -auto
+     -cover:  تغطي المحتوي لكن لن تكون الصورة مكتملة
+     -contain:تغطي الحتوى لكن ستكون مكتملة
+
+[3] Padding:- // يجعل الهوامش في الداخل
+   -padding: value; short hand for all direction.
+   -padding-dir: top - right - bottom - left.
+
+[4] Margin:- //  يجعل الهوامش في الخارج
+   -margin: value; short hand for all direction.
+   -margin-dir: top - right - bottom - left.
+
+[5] Border:-
+   1-border-width: value;
+     -border-dir-width: value;
+   2-border-color: value;
+     -border-dir-color: value;
+   3-border-style: value;
+     -border-dir-style: value;
+   4-border: width style color; // Short hand for border.
+
+[6] Outline:-
+   1- outline: width style color;
+   2- لا يؤثر على حجم العنصر
+   3- يقبل اتجاه واحد فقط   

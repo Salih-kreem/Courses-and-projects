@@ -1,0 +1,76 @@
+* {
+    padding: 0; margin: 0;
+    transition: linear .2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD;
+}
+h1 {
+    font-size: 35px;
+    margin: 30px 0;
+    color: grey;
+    letter-spacing: 1px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    min-width: 500px;
+    border-radius: 5px;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, .8),
+                 3px 3px 6px rgba(0, 0, 0, .2)
+}
+.icons p {
+    padding: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, .8),
+                 3px 3px 6px rgba(0, 0, 0, .2)
+    
+}
+.icons p i {
+    font-size: 40px;
+}
+.icons p:first-child {
+    color: rgb(212, 8, 76);  
+}
+
+.icons p:nth-child(2),
+.icons p:nth-child(6) {
+    color: rgb(230, 10, 10);
+}
+
+.icons p:nth-child(3),
+.icons p:nth-child(4) {
+    color: rgb(66, 155, 245);
+}
+
+.icons p:nth-child(5) {
+    color: rgb(19, 206, 19);
+}
+
+.icons p:hover {
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, .8),
+                 3px 3px 6px rgba(0, 0, 0, .2),
+                 inset -2px -2px 4px rgba(255, 255, 255, .8),
+                 inset 3px 3px 4px rgba(0, 0, 0, .2);
+    filter: grayscale(0);
+}
+

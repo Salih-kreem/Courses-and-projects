@@ -1,0 +1,111 @@
+[1] Function:-
+    1- What Is Function? // هي مجموعة من اسطر الاكواد التي تؤدي عملا معين عند استدعائها
+
+
+    Note! //تعتبر بيئة مستقلة فالمتغيرات التي تكون داخلها خاصة بها وليس لها علاقة بما خارجها
+
+    2- Why Use The Function? // تستخدم لكتابة الاكواد مرة واحدة وتستخدم اكثر من مرة لجعل اسطر الاكواد اقل وتؤدي مهمة واحدة
+
+       Dry => Don't Repeat By Yourself.
+
+    3- Syntax:
+       function nameFunc() {
+       //Block OF Code;
+       } nameFunc(); // call Back Function.
+
+    4- Parameter// الطريقة الوحيدة للتاثير بما داخل الدالة هو ارسال متغير
+       function nameFunc(parameter) {
+       // Block Of Code;
+       } nameFunc(value The Parameter);
+
+       Note! You Can Storge The Function In The Variable.
+
+       - Default Function Parameter => Undefined.
+       - Old Strategies [Condition + Logical Or].
+         1- if(age === undefined) {
+         age = "value";
+         }
+         2- age = age || "value";
+         3- nameFunc(age = "value"){}
+
+
+
+[2] Return:
+
+
+
+[3] Rest Parameter:-
+       1- rest like array.
+       2- Syntax:
+            function nameFunc(...Parameter) {
+            // Block Of Code;
+            } nameFunc(40, 50, 11, 20, 21, 32, 125);
+       3- Just Allowed one only rest.
+       4- Must Be Last Element.
+
+
+[4] Anonymous Function: // هي داله مجهولة الهويه
+
+     let sayhello = function() {
+       return `good morning`;
+     }
+      console.log(sayhello());
+   1- task without name.
+   2- setTimeout.
+
+
+[5] Nested Function:
+
+
+
+[6] Arrow Function:
+
+      let print = function() {
+      return 10;
+      }
+      console.log(print());
+
+      let print = () => 10;
+      console.log(print());
+
+---------------------------------------
+
+      let print = function(num) {
+      return num;
+      }
+      console.log(print(50));
+
+      let print = (num) => num;
+      console.log(print(50));
+
+
+[7] Scope And Global:-
+
+    The Global Scope Cannot Access to the local Scope But The Local Scope
+    Can Access to the Global Scope.
+
+    If you dont have value in the local scope you can take the value from the global scope.
+
+
+
+[8] Scope Block:-
+    It's same [if, for, switch]
+
+    var x = 50;
+    if(50 == 50) {
+       var x = 40;
+    }
+    console.log(x) return 40.
+
+    Note! If you used var It is think all variable in the Global so the code
+          Don't run.
+
+          If you want run the code use the [ let , const]
+
+
+[9] Lexical Scope:-
+    It's same Block Scope.
+
+    Search:
+     - Execution Context
+     - Lexical Environment

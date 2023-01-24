@@ -1,0 +1,71 @@
+[1] Text Overflow:-
+   1-text-overflow: value;
+     - ellipsis: // يضع 3 نقاط في نهاية النص يوضح ان النص مقطوع ويحترم الهوامش الداخلية
+
+[2] Inhertitance:-
+
+   Example:
+    div {
+    text-align: center;
+    color: red;
+    }
+
+    div p {
+    text-align: right;
+    color: inherit;
+    }
+
+[3] Typography Font Family:-
+   1- Web fonts: // هي خطوط متاحة للاستخدام في كل المواقع ومتاحة لكل من يدخل الموقع حتي لو لم تكن موجودة في جهازة
+   2- name-font, name-font // اذا لم يتوفر الخط الاول يظهر الخط الثاني
+   3- serf: // الخط يكون بكسرة
+   4- sans-serf: // الخط يكون بدون كسرة
+
+[4] Typography Font Size:-
+   1- Css Units:
+     - px: 10px;
+     - em: Time // هي المساحة التي تورثها من العنصر الاب
+     - rem: Root Time: // html هي المساحة التي يورثها من الرووت
+     - vw : viewPortWidth: // هو عرض الصفحة كاملة
+     - percentage: 50%; // ياخذ نسبة مؤية من الاب
+  2- Read:-
+    - rmin:
+    - vh:
+
+[5] Font Style and variant and weight:-
+   1- font-style: value;
+     - italic:
+     - oblice:
+   2- font-variant: value;
+     - small-caps; // يجعل الحروف كبيرة لكن حجمها اصغر من الحجم العادي
+   3- font-weight: value;
+     - bold; // تجعل الخط سميك
+     - normal; // تجعل الخط عادي
+
+[6] Mouse Cursoer:-
+   1- mouse-cursor: value;
+     - pointer;
+     - grab;
+     - move;
+
+[7] Float And Clear:-
+   1- float: value; // هي خاصية تجعل العناصر تعوم في الصفحة
+     - left; // تجعل العناصر تعوم ناحية اليسار
+     - right; // تجعل العناصر تعوم ناحية اليمين
+   2- clear: value; // هي خاصية تعمل كلير للفلوت
+     - left;
+     - right;
+     - both;
+
+[8] Calculation:-
+
+[9] Opacity:-
+   1- opacity: 0.5; // تعمل شفافية للمحتوى كاملا
+
+[10] Position:-
+    1- position: value;
+      - static; // تجعل العنصر ثابت في الصفحة
+      - relative;
+      - absolute;
+      - fixed;
+      - sticky;

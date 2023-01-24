@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* form {
+  width: 200px;
+  height: 200px;
+  border: 0.1rem solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eee;
+} */
+.container {
+  border: 0.1em solid #dddd;
+  border-radius: 5px;
+  height: 450px;
+  padding: 20px;
+  background: #eee;
+  box-shadow: 2px 5px 10px rgba(0 0 0 / 10%);
+}
+::placeholder {
+  padding-left: 10px;
+  font-size: 15px;
+}
+.title {
+  text-align: center;
+}
+.title h2 {
+  color: #666;
+}
+.title p {
+  color: #999;
+}
+input {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  height: 20px;
+  border: none;
+  background-color: #ddd;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  border: none;
+  background-color: rgb(226, 109, 66);
+  color: white;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image {
+  border: 0.1rem solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  height: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.social i {
+  padding: 0 10px;
+  font-size: 30px;
+  color: rgb(226, 109, 66);
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.social i:hover {
+  transform: translateY(-6px);
+}

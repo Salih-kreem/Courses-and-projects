@@ -1,0 +1,71 @@
+[1] For:-
+
+    Syntax:
+      for ([1]; [2]; [3]) {
+      // Block Of Code
+      }
+
+    - [1] // هي مرحلة الانطلاق لللوب
+    - [2] // الشرط
+    - [3] // الزيادة بعد الشرط
+
+
+
+[2] Looping On Sequences:-
+
+    let Info = ["salih", "Abdalla", 20, "saad", 5, 15];
+    let num = [];
+    let str = [];
+
+    for (let i = 0; i < Info.length; i++) {
+      if(typeof Info[i] === "string") {
+      str.push(Info[i]);
+      } else {
+      num.push(Info[i]);
+      }
+    }
+    console.log(num);
+    console.log(str);
+
+
+
+[3] Nested Loop:-
+
+    for () {
+    // Block Of Code
+     for () {
+     // Block Of Code
+     }
+    }
+
+
+
+[4] Loop Control:-
+
+    1- break; // يوقف عمل اللوب في المكان المحدد
+    2- continue; // لا يطبع العنصر المحدد
+    3- label; // يحدد اللوب الذي يوقفه سواء كان الرئيسي او الفرعي
+
+
+
+[5] Loop While And Do While:-
+
+    1- While:- //  لا ينفذ الا اذا تحقق الشرط
+
+       Syntax:
+         while(Condition) {
+       // Block Of Code;
+       // Increment Expression;
+       }
+
+    Note! If You Dont write Increment Will infinet loop for your code.
+
+
+    2- Do While:- // ينفذ اولا ثم يتحقق من الشرط
+
+       Syntax:
+          do {
+          //Block Of Code;
+          // Increment Expression;
+          } while(Condition);
+          

@@ -1,0 +1,47 @@
+[1] If Condition:-
+    1- if // الشرط الاول
+    2- else if // الشرط التالي
+    3- else // اذا لم تتحقق كل الشروط
+
+    syntax:
+      if (condition) {
+      // statement Or Block Of Code.
+      } else if (condition) {
+      // statement Or Block Of Code.
+      } else {// statement Or Block Of Code}
+
+
+[2] Nested If Condition:-
+     That mean Other if condition inside main if condition.
+
+     syntax:
+       if (condition) {
+           if (condition)  {
+           //tatement Or Block Of Code
+           } else { //tatement Or Block Of Code }
+
+       } else { //tatement Or Block Of Code }
+
+
+[3] Condition Ternary:-
+    1- If
+       syntax:
+       // Condition ? true : false;
+       Example:
+       10 === "10" ? yes : no;
+
+    2- else if
+       syntax:
+       Condition // first condition
+       ? statement
+       :condition // second Condition
+       ? statement
+       :statement // else
+
+
+[4] ?? Or || :-
+       1- [ || ] Or:-
+       return Second value If first value = null or undefined or falsy value.
+
+       - [ ?? ] nullish Coalescing Operator.
+       Not return falsy value like zero.

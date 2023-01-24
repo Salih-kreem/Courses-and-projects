@@ -1,0 +1,77 @@
+
+[1] apple, Book, Cat, Dog, Egg,
+    Fish, Goat, Hippo, Iguana, Jellyfish
+    Kangaroo, Lion, Monkey, Nest, Ostrich,
+    Panda, Quack, Rabbit, Snake, Turtle
+    Unicorn, Vulture, Window, X-ray, Yallow
+    Zebra,
+
+    Th // ذا او ث
+    Sh // ش
+    Ch // تشا
+
+[2]
+  1- A:
+   Bat, Gas, Wax, Map,
+  2- I:
+   Fish, Lips, Fix, Sip
+  3- U:
+   Sum, Duck, Mud,
+  4- O:
+   Dog, Pot, Sock
+  5- E:
+   Bed, Pet, Wet
+
+[3]
+  This //   هذا
+  This is // هذا يكون
+
+  This is a chair
+  This is a table
+  This is a man
+  This is a woman
+  This is a cabinet
+
+  Is This? // هل هذا يكون
+  Is This a man?
+  Yes This is a man.
+  Is This a woman?
+  Yes This is a woman.
+  Is This a table?
+  Yes This is a table.
+
+[4]
+  This is a laptop.
+  This is a phone.
+
+  This is not // هذا لا يكون
+  Is this a laptop?
+  No this is not a laptop, This is a cabinet.
+
+  A teacher, a student, a floor
+  A ceiling, a wall, a window
+
+[5]
+  A // اسم مفرد
+  An // تستخدم في حال كان اول حرف في الكلمة ااا
+    "a - e - i - o - u".
+    An apple, an orange, an ice-cream, an elephant
+    An umbrella
+
+    This is an egg, this is a key
+    This is a chair, this is an octopus
+    This is an engineer, this is a police officer.
+
+   A flower, a tree, a pen, an ant
+   An office, a monkey, an onion
+   A wasp.
+
+   This // تشير للقريب
+   That // تشير للبعيد
+   Is that // للسؤال عن البعيد
+
+   Is that an ant ? no that is not an ant, That is a wasp
+
+
+
+[6] Time trial - Test:-

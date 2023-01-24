@@ -1,0 +1,39 @@
+[#] String Syntax + Character Escape Sequences:-
+   1- " \ " Escape And continue Line.
+   2- " \n " Break Line.
+
+[#] Concatenation:-
+   1- " + " // تستخدم لربط البينات ببعضها البعض
+
+[#] Template Litrals (template String):-
+   1- " `` " Back tik:-
+      - You can use space.
+      - You can go to the bottom line Without put Back slash.
+      - You can build an intergrated Structure for an html document.
+
+[#] Arithmetic Operators:-
+  1- " + " Addition:-
+   - Number + String return String
+   - String + Number return String
+
+  2- " - " Subtraction:-
+   - Number - Number return number.
+   - number - String return NaN = not a number.
+     typeof NaN = Number.
+
+  3- " * " multilication.
+
+  4- " / " Division.
+
+  5- " ** " Exponentiation (Es7).
+
+  6- " % " Modulus: (Division Remainder).
+
+  7- " ++ " Increment:-
+    - Post: a++ // يطبع القيمة ثم يزيد رقم
+    - Pre: ++a // يزيدرقم اولا ثم يطبع القيمة
+
+  8- " -- " Decrement:-
+    - Post: a-- // يطبع القيمة ثم ينقص رقم
+    - Pre: --a // ينقص رقم اولا ثم يطبع القيمة
+    

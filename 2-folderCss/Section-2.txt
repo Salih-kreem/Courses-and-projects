@@ -1,0 +1,99 @@
+[1] Display:-
+  1- Block:
+     - Take full width if no width.
+     - Add line break before and after the element,
+     - respect padding, margin, width, height.
+
+  2-Inline:
+     - Take width just fit content.
+     - No add line break before and after the element.
+     - No respect width and height.
+     - Respect padding and margin just from left and right.
+
+  3-Inline-Block:
+     - Respect padding, margin, width, height.
+     - Allow elements before and after it.
+
+[2] Element Visibility:-
+  1-display: none; // تخفي العنصر من التصميم
+  2-visibility: value;
+    -visibile: Default value.
+    -hidden: // تخفي العنصر لكن تحفظ مكانه في التصميم
+
+[3] Grouping Multiple Selectors:-
+  .nav,
+  .header,
+  .container {
+     color: red;
+  }
+
+[4] Nesting:-
+   p {color: red}
+   .header p {color: green}
+   .nav p {color: blue}
+
+[5] Dimentions Width and height:-
+  1- width:
+    - min-width: 500px; // احتمال ان يزيد العرض عن القيمة المحددة
+    - max-width: 500px; // لا يزيد العرض عن عرض القيمة المحددة
+    - width: 500px; // لايزيد ولا يقل العرض عن القيمة المحددة
+    - width: fit-content; // تجعل عرض العنصر مساوي للمحتوى
+  2- height:
+    - min-height: 500px; // احتمال ان يزيد الارتفاع عن القيمة المحددة
+    - max-height: 500px; // لا يزيد الارتفاع عن القيمة المحددة
+    - height: 500px; // لا يزيد ولا يقل الارتفاع عن القيمة المحددة
+
+[6] Overflow:-
+    1- overflow: value;
+     - visibile: // Default value.
+     - hidden: // تخفي المحتوى الزائد في العنصر
+     - scroll.
+     - auto.
+    2- overflow-x: // يخفي المحتوى افقيا
+    3- overflow-y: // يخفي المحتوى عموديا
+
+[7] Text Shadow:-
+   1- H-shadow: // افقي
+   2- V-shadow: // عمودي
+   3- Blur: // تاثير الضباب
+   4- color: // لون الظلال
+   Syntax:
+    text-shadow: H-shadow V-shadow Blur color;
+    text-shadow: 1px 1px 1px red;
+
+[8] Text Alignment:-
+  1- text-align: value;
+   - left: // يجعل النص يسار الصفحة
+   - center: // يجعل النص وسط الصفحة
+   - right: // يجعل النص يمين الصفحة
+  2- Direction:
+   - ltr // يجعل اتجاه الصفحة من اليسار الى اليمين
+   - rtl // يجعل اتجاه الصفحة من اليمين الى اليسار
+  3- verticl-align:
+     - top: // تجعل محاذاة النص من الاعلى
+     - middle: // تجعل محاذاة النص في الوسط
+     - bottom: // تجعل محاذاة النص في الاسفل
+
+[9] Text Spacing:-
+  1- letter-spacing: value; // يجعل مسافة بين الحروف
+  2- text-indent: value; // هي المساحة الفارغة قبل النص
+  3- line-height: value; // هي المسافة بين الاسطر
+  4- word-spacing: value; // تجعل مسافة بين الكلمات
+  5- white-space: value;
+     - normal: // المحتوى ينزل اذا وصل الى نهاية العنصر
+     - nowrap: // المحتوى لا ينزل ويخرج خارج العنصر
+  6- word-break: value;
+     - normal:
+     - break-all:
+     - break-word:
+
+[10] Text Decoration And Transformation.
+   1-text-decoration: value;
+     - line-through: // يجعل خط غي وسط النص
+     - underline: // يجعل خط تحت النص
+     - overline: // يجعل الخط اعلى النص
+     - none: // تخفي الخط من النص
+   2- text-transform: value;
+      - capitalize: // يجعل الحرف الاول كبير
+      - uppercase: // يجعل كل الحروف كبيرة
+      - lowercase: // يجعل كل الحروف صغيرة

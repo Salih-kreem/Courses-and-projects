@@ -1,0 +1,20 @@
+[1] Comparison Operators:-
+   1- [==] Equal // تقارن القيمة فقط
+   2- [!=] Not Equal //Compare value only.
+   3- [===] Identical // Compare value and data type.
+   5- [!==] Not Identical // Compare value and data type.
+   6- [>] Larger Than.
+   7- [<] Smaller Than.
+   8- [>=] Larger Than Or Equal.
+   9- [<=] Smaller Than Or Equal.
+
+
+[2] Logical operators:-
+   1- [!] Not // تعكس القيمة
+   2- [&&] And // يجب ان تتحقق كل الشروط
+   3- [||] Or // يجب ان يتحقق شرط واحد عبى الاقل
+
+   Examples:-
+     - console.log(true); return true
+     - console.log(!true); return false
+     

@@ -1,0 +1,21 @@
+class App extends Component {
+  state = {
+    name: 'Salih'
+  }
+  Hello ()  {
+    this.setState({
+      name:'Salih alnor',
+      age: 26
+    })
+  }
+  render() {
+    return (
+      <div className="App">
+      <button onClick={this.Hello.bind(this)}>Click</button>
+      <p>{this.state.name}</p>
+      <p>{this.state.age}</p>
+      
+      </div>
+    );
+  }
+} 

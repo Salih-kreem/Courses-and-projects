@@ -1,0 +1,28 @@
+# Flex Box:-
+ [1] Parent:-
+  1- display: flex or inline-flex;
+  2- flex-direction: value; // تحدداتجاه الفلكس
+    - row.
+    - row-reverse.
+    - column.
+    - column-reverse.
+  3- flex-wrap: value; // تتعامل مع العناصر الزائدة
+    - no-wrap: // Default value.
+    - wrap.
+    - wrap-reverse.
+  4- flex-flow: value value; // Short hand [flex-direction - flex-wrap].
+  5- justify-content: value; // هي توزيع المحتوى افقيا
+    - flex-start.
+    - flex-end.
+    - center.
+    - space-between.
+    - space-around.
+    - space-evenly.
+  6- align-items: value; // هي توزيع المحتوى عموديا
+    - flex-start.
+    - flex-end.
+    - center.
+    - space-between.
+    - space-around.
+    - space-evenly.
+  7-

@@ -1,0 +1,25 @@
+# Transform 2D :-
+  1- Scale:// تجعل العنصر يتمدد
+    - scaleX(); // يتمدد افقيا
+    - scaleY(); //يتمدد عموديا
+    - scale(); // يتمدد افقيا وعموديا
+
+  2- Rotate:// تجعل العنصر يلتف حول عقارب الساعة
+    - deg = degrees.
+    - rad = radians.
+    - grad = gradians.
+    - turn = 1turn // يلتف مرة حول نفسه
+
+  3- Translate:// تحرك العنصر حسب الاتجاه
+    - translateX(); // تحرك العنصر افقيا
+    - translateY();  تحرك العنصر عموديا
+    - translate(X, Y);
+
+  4- Skew:// تعمل انحراف للعنصر
+    - skewX();
+    - skewY();
+    - skew(X, Y);
+
+  5- Matrix:
+     syntax
+matrix(scaleX(),skewY(),skewX(),scaleY(),transX(),transY());

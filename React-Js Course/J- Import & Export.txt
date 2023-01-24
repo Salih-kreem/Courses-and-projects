@@ -1,0 +1,45 @@
+[1] Export:-
+    It means if you put the variable or function or component
+    In export mode, this means using it in another files
+    But it can't be used unless it is in import mode.
+
+    Syntax:
+     export let varName = "Value";
+
+     Example:
+     
+     export let yourName = 'Salih';
+
+[2] Import:-
+    It means importing a variable or component from a specific file 
+    But a variable cannot be imported unless it is in export mode.
+
+    Syntax:
+
+    import varName from 'path';
+
+    Example:
+
+    import {yourName} from './index'
+
+    Note: In path don't write extensions 
+
+[3] Export Default:
+    It means that it cannot be repeated and used only once
+
+    Syntax:
+    
+    export default varName or functionName;
+
+    Note: If it is a function, don't write parentheses. 
+
+[4] The difference between Export & Export Default:-
+
+    1- Export:
+       - It can repeated
+       - It's imported in brackets
+
+    2- Export Default:
+       - It cannot repeated
+       - It's imported without brackets
+       

@@ -1,0 +1,14 @@
+[#] Switch Statement:-
+    Syntax:-
+    
+      let expression = value;
+
+      switch(expression) {
+      case value:
+      // Block Of Code;
+      break;
+      case value:
+      //Block Of Code;
+      Default:
+      //Block of Code;
+      }

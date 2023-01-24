@@ -1,0 +1,139 @@
+[1] Browser Object Model:- BOM
+    
+  - Window Object Is the browser window.
+  - Window contain Document Object Model.
+  - Test Document and console.
+  - All global variables and objects and functions are members of 
+    window object.
+    
+1- What we can do with window object ?
+  - Open window
+  - Close window.
+  - Move window.
+  - Print document.
+  - Resize window.
+  - Run code after period of time once or more.
+  - Fully control the url.
+  - Save data inside browser to use latter.
+  
+
+[2] SetTimeout And ClearTimeout:-
+    
+  1- SetTimeout: You can use function and anonymous function.
+     setTimeout(function, timeout, additional prameters)
+     
+  2- Clear Timeout: Can stop function in the time wating before start.
+     clearTimeout(Identifier or number setTimeout);
+     
+    Example:
+     
+     let a = setTimeout(function() {
+     console.log("Good morning");
+     },5000);
+     
+     btn.onclick = () => {
+     clearTimeout(a);
+     };
+     
+     
+ [3] SetInterval And ClearInterval:-
+     
+   1- SetInterval: هي المده التي ينتظرها النظام حتى يعيد تنفيذ الداله
+   2- ClearInterval:
+   
+   let div = document.gitElementByTagName('div');
+   let s = setInterval(count, 3000);
+   function count() {
+   div.innerHTML -=1;
+   if(div.innerHTML === "0){
+   clearInterval(s);
+   }
+   };
+   
+   
+ [4] Location Object:-
+ 
+   1- href:
+      - get: console.log(location.href);
+      - set: location.href = 'new url';
+   
+   2- host: giv name website and port.
+      location.host;
+      
+   3- hostname: giv website name only without port.
+      location.hostname
+      You can change host and hostname by:
+      lcation.host = 'twitter.com';
+      
+   4- protocol: 
+     - http: hyber text transfer protocol.
+     - https: hyber text transfer secure player.
+       location.protocol
+       You can change protocol
+       location.protocol = 'http or https';
+ 
+    5- hash: #
+    
+    6- Reload: 
+       location.reload();
+       
+    7- replace('url'); Delete first page from history.
+    8- assign('url'); Dont delete first page from history.
+    
+    
+ [5] Open And Close:-
+     
+     1- open:
+        window.open("url", "window name or target", "window features", "history") // All this optional.
+        
+        Features:
+         top right bottom left 
+         If you dont write features will open window with fully features.
+         
+     2- close:
+        window.close(); // will close window it's open with window.open();
+        
+        
+        
+ [6] History Object:-
+     
+     1- history.back(); يرجع صفحة للخلف
+     2- history.forward(); يذهب صفحة للامام
+     3- history.go();
+        -2 يرجع صفحتين للخلف
+        
+        
+        
+  
+  [7] Local Storage:-
+      
+      Part of the web storage API are three tools to save key/value pairs locally.
+      
+      1- setItem().
+      - localStorage.setItem("key", "value");
+      - localStorage.key = "value";
+      - localStorage["key"] = "value";
+      
+      2- getItem();
+      - localStorage.getItem("key");
+      - localStorage.key;
+      -localStorage["key"];
+      document.body.style.background = localStorage['color or key'];
+      
+      3- removeItem();
+      - localStorage.removeItem('key');
+      
+      4- clear();
+      - localStorage.clear();
+      
+      5- key(); take index key.
+      - localStorage.key(index);
+      
+      6- JSON.stringify(); تحول البيانات من مصفوفة او كائن الى نص
+      - localStorage.setItem(JSON.stringify('key', 'value'));
+      
+      7- JSON.parse(); تحول البيانات من نص الى مصفوفة او كائن
+      - JSON.parse(localStorage.getItem('key'));
+         
+         
+ 

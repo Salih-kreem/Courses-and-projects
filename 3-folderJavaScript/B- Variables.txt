@@ -1,0 +1,43 @@
+[#] Variables:-
+ 1- What's Variable? // هو حاوية تحتوي على بيانات
+ 2-Why we use variables?
+ 3- Declare a variable and use.
+ 4- Syntax(keyword nameVar  assignment  value).
+   - keyword // هي كلمة محجوزة في النظام يتم تعيين المتغير بها
+   - nameVar // هو اسم المتغير الذي تخزن فيه القيمة
+   - assignment // مهمتها تخزين القيمة في المتغير
+   - value // هي القيمة التي تخزن في المتغير
+ 5- Variable Without Var.
+ 6- multiple variables in the same line.
+ 7- Id and Global variable.
+ 8- Loosly Typed vs Strongly Typed.
+
+[#] Identifiers:-
+   - Name Convention And Rules.
+   - Reserved Words.
+   1- Don't put space in the variable. not valid.
+   2- Don't start with a number.
+   3- You can start with underscore "_".
+   4- You can start with Dolor ssign "$".
+   5- You can't use special characters.
+   6- You can't use Keywords.
+
+[#] Var Let Const:-
+
+  1- Var:
+   - Redeclare: " Yes "
+   - Access Before Declare: " Undefind"
+   - Add to Window: " Yes " But There problems Variable Drama Scope
+   - Block or function:
+
+ 2- Let :
+   - Redeclare:"No" Error var has already declared
+   - Access Before Declare: "No" Cannot Access var Before Initialization
+   - Add to Window: " No Add to Window"
+   - Block or function:
+
+ 3- Const :
+   - Redeclare:"No" Error var has already declared
+   - Access Before Declare:"No" Cannot Access var Before Initialization
+   - Add to Window:" No Add to Window"
+   - Block or function:
